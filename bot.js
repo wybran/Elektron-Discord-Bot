@@ -10,7 +10,7 @@ for (const file of commandFiles) {
 	client.commands.set(command.name, command);
 }
 
-client.on('ready', () => {
+client.on('shardReady', () => {
 	console.log('Bot pomyslnie wystartowal!');
 	client.user.setActivity(prefix+'pomoc', { type: 'LISTENING' });
 
